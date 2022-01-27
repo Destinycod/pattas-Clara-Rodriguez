@@ -1,0 +1,139 @@
+
+@charset "UTF-8";
+
+.itemContainer{
+  flex-wrap: wrap;
+  text-align: center;
+}
+.itemDetailContainer{
+  text-align: center;
+}
+
+/* CARRITO */
+.carrito{
+  align-items: center;
+  text-align: center;
+}
+/* FIN CARRITO */ 
+
+/* CONTACTO */
+.boton--enviar{
+  width: 130px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer; }
+
+.boton:hover {
+  background-color: #4CAF50;
+  color: white; }
+
+.boton--enviar {
+  border-radius: 0px;
+  background-color: white;
+  color: black;
+  border: 2px solid gray; }
+
+.boton--enviar:hover {
+  background-color: gray;
+  color: white; }
+/* FIN CONTACTO */
+
+/* ITEM DETAIL */
+.itemDetail{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+/* FIN ITEM DETAIL */
+
+/* GENERALES */
+.alignCenter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%; }
+
+.row {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.paddingRL {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+  .loadingImage{
+    animation: loadingImage-spin 1s ease-in 0s infinite;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  @keyframes loadingImage-spin {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+/* FIN GENERALES */
+
+/* FOOTER */
+.footer {
+  background-image: linear-gradient(to bottom, #e31006, #f06e0f);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10px; }
+  .footer .row {
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+  }
+  .footer .colFooter {
+    color: white;
+    text-decoration: none; }
+  .footer .centrado {
+    text-align: center; }
+  .footerD{
+    padding-top: 10px;
+  }
+
+/* FIN FOOTER */
+
+/* vista mobile */
+@media only screen and (min-width: 0px) and (max-width: 969.9px) {
+  .header {
+    text-align: center; }
+  .footer {
+    text-align: center; }
+    .footer .footerD {
+      display: none; } }
+
+/* vista desktop */
+@media only screen and (min-width: 970px) {
+  .nav-item {
+    padding-left: 30px;
+    padding-right: 30px; }
+  }
